@@ -49,7 +49,8 @@ const convert = (req,res)=>{
     //     console.log('.png file is deleted')
     //   }
     // })
-    fs.rmdirSync(`./images`, {
+    const file ='./images'
+    fs.rmdirSync(`${file}`, {
       recursive: true
     })
       res.send(con.toString())
